@@ -3,15 +3,44 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>music</title>
   </head>
   <body>
-    <noscript>
+    <!-- <noscript>
       <strong>We're sorry but music doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
+    </noscript> -->
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <style>
+    html{
+        font-size: 13.33333vw;
+    }
+    html,body{
+        width: 100%;
+        max-width: 750px;
+        min-width: 320px;
+        height: 100%;
+        display:block;
+        margin:0 auto;
+        background: #fff;
+        overflow-x:hidden;
+        font-family: 'Hiragino Sans GB', Arial, Helvetica, sans-serif;
+        font-family: "myFirstFont";
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+    @media screen and (min-width: 750px){
+        html{font-size:100px;}
+    }
+    @media screen and (max-width: 320px){
+        html{font-size:42.666667px;}
+    }
+    [v-cloak]{
+        display: none !important;
+    }
+  </style>
 </html>

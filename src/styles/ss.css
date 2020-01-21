@@ -1,0 +1,268 @@
+.listss{
+    width: 100%;
+    /* position: relative; */
+}
+
+.paslist{
+    width: 100%;
+    height: calc(100% - 3.1rem);
+    position: absolute;
+    top: 1.1rem;
+    overflow: hidden;
+}
+.musics{
+    /* width: 100%;
+    height: 100%; */
+    /* position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0; */
+
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.musicsList{
+    width: 100%;
+    height: auto;
+    display: table;
+    /* margin-bottom: 2rem; */
+}
+.list{
+    width: 100%;
+    /* height: 2rem; */
+    padding: 0.2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ccc;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.list:last-child{
+     border-bottom:none
+}
+.listImg{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: table;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.listImg img{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.listtext{
+    width: 3rem;
+    height: auto;
+    float: left;
+    /* flex-grow:1;
+    -webkit-box-flex: 1; */
+    padding-left: 0.15rem;
+    box-sizing: border-box;
+}
+.nameMusic{
+    width: 100%;
+    text-align: left;
+    font-size: 0.3rem;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.actorMusic{
+    width: 100%;
+    text-align: left;
+    font-size: 0.2rem;
+}
+.musicpaly{
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    padding: 0 0.25rem;
+
+}
+.musicpaly img{
+    width: 100%;
+    height: auto;
+    display:table;
+}
+.musicshare{
+    width: 0.5rem;
+    height: auto;
+    float: left;
+    padding: 0 0.25rem;
+}
+.musicshare img{
+    width: 100%;
+    height: auto;
+    display:table;
+}
+/* 音乐播放器 */
+.player{
+   width: 100%;
+    height: 2rem;
+    border-top: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.1rem 0.2rem;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.playerlogo{
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+.playerlogo img{
+    width: 100%;
+    display: table;
+}
+.playercenter {
+    padding-left: 0.2rem;
+    float: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: 1;
+    flex-flow: 1;
+    width: 3.5rem;
+    height: 1.6rem;
+    /* display: table; */
+    text-align: left;
+}
+.playertitle{
+    width: 100%;
+    font-size: 0.4rem;
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.playername{
+    width: 100%;
+    font-size: 0.25rem;
+    color: #ccc;
+}
+
+.playerplay{
+    width: 0.9rem;
+    display: table;
+    float: left;
+    margin: 0 0.1rem;
+
+}
+.playersheet{
+    width: 0.8rem;
+    display: table;
+    float: left;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mutlist{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 6;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.34);
+    transition: all 0.2s;
+}
+.lists{
+        width: 3rem;
+    background: #fff;
+    border: #eee 1px solid;
+    position: absolute;
+    font-size: 0.2rem;
+    bottom: 1.5rem;
+    height: 6rem;
+    right: 0.2rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0.12rem 0.2rem;
+    box-sizing: border-box;
+    z-index: 7;
+}
+.lists ul{
+        width: 100%;
+    text-align: left;
+
+    border-bottom: 1px #eee dashed;
+
+}
+.lists ul li{
+    width: 100%;
+    overflow: hidden;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 0.2rem;
+    color: #666;
+}
+.lists ul li:first-child{
+    color:#3ad5a4;
+    font-size: 0.27rem;
+    padding: 0.08rem 0.2rem;
+}
+/* 加载中 */
+.loading{
+    width: 100%;
+    font-size: 0.35rem;
+    color: #3ad5a4;
+}
+
+/* 音乐添加图标 */
+.playermusic{
+    width: 0.35rem;
+    position: absolute;
+    display: none;
+}
+
+.playermusic img{
+    width: 100%;
+    display: block;
+}
+
+.addplayer{
+    /* position: relative; */
+    display: block;
+    transition: 2s all;
+    /* top: 8rem; */
+    /* top: 0; */
+    /* animation: addplayer 3s ;
+    -webkit-animation:addplayer 3s ;
+    animation-timing-function:linear; */
+}
+@keyframes addplayer
+{
+0%{
+   
+    /* top: 0rem; */
+    /* bottom: 0; */
+}
+
+100%{
+   
+    top: 20rem;
+    /* bottom:0rem; */
+    /* display: none; */
+}
+}
